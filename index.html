@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="style1.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Virtual Class</title>
+    <style>
+        ul {
+            margin: 10px;
+            padding: 10px;
+         }
+        li {
+            display: inline;
+            margin: 10px;
+            padding: 2px;
+         }
+    ul{     
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    }
+
+    li {
+        float: left;
+        }
+
+    li a {
+        display: block;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        padding: 10px 12px;
+        text-decoration: none;
+        background-color: black;
+        }
+
+    li a:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        text-decoration: underline;
+        }
+
+        .box {
+		margin: 50px;
+        width: 250px;
+        height: 150px;
+        background: url("images/n6.png");
+        position: relative;
+        animation-name: moveit;
+        animation-duration: 15s;
+    }
+    @keyframes moveit {
+        from {left: 5%;}
+        to   {left: 100%;}
+    }
+
+    .box{
+width: 250px;
+height: 150px;
+border: 1px solid black;
+}
+
+
+
+    </style>
+
+</head>
+
+
+
+<body style="background-color:rgb(65, 84, 176)">
+    <header style="background-image: URL(images/live\ class.jpeg); text-align: right; height:300px; font-size: 40px;">
+    <div class="centered">LIVE VIRTUAL CLASS</div>
+    <div class="box"></div>
+    </header>
+
+    <nav">
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="courses.html" target="frm">ALL COURSES</a></li>
+			<li><a href="registeration.html" target="frm">REGISTERATION</a></li>
+            <li><a href="gallery.html" target="frm">PHOTO GALLERY</a></li>
+			<li><a href="blog.html" target="frm">BLOG</a></li>
+            <li><a href="Graphics.html" target="frm">HELP</a></li>
+            <li><a href="contact_us.html" target="frm">CONTACT US</a></li>
+        </ul>
+	</nav>
+ 
+    <iframe name="frm" src="courses.html" height="500" width="1400"></iframe>    
+
+    <footer>
+		<p></p>
+	</footer>
+
+
+</body>
+</html>

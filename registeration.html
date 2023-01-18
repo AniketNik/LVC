@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration form</title>
+</head>
+<body>
+    <div class="container" style="float: center;">
+    <h1>Registeration For LVC</h1>
+    <form action="Welcome.html">
+        NAME <input type="text" required  placeholder="Your name here">
+        <br>
+        Gender:   
+        <input type="radio" id="gender" name="gender" value="male"/> Male 
+        <input type="radio" id="gender" name="gender" value="female"/> Female <br>
+        EMAIL: <input type="email" required placeholder="Your Email here"> <br>
+        LOCATION: 
+        <select>
+            <option value="0">Select Location</option>
+            <option value="1">Pune</option>
+            <option value="2">Mumbai</option>
+        </select><br>
+        SOFTWARE:
+        <input type="checkbox" id="WORD" name="WORD" value="WORD">
+<label for="WORD"> WORD</label><br>
+<input type="checkbox" id="EXCEL" name="EXCEL" value="EXCEL">
+<label for="EXCEL"> EXCEL</label>
+<input type="checkbox" id="POWERPOINT" name="POWERPOINT" value="POWERPOINT">
+<label for="POWERPOINT"> POWERPOINT</label><br>
+        REMARKS:
+        <input type="text"><br><br>
+        <div >
+        <input type="submit" value="submit" onsubmit="fun()">
+        <!-- <script></script> -->
+    </form>
+    </div>>
+<script>
+    function fun(){
+        alert("submitted");
+        console.log("trigger")
+    }
+</script>
+
+    </div>
+</body>
+</html>

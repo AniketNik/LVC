@@ -3,8 +3,10 @@
 <head>
     
     <link rel="stylesheet" href="style1.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <title>Live Virtual Class</title>
     <style>
         ul {
@@ -45,7 +47,7 @@
         }
 
         .box {
-		margin: 50px;
+		margin: 30px;
         width: 250px;
         height: 150px;
         background: url("images/n6.png");
@@ -68,14 +70,67 @@ border: 1px solid black;
 
     </style>
 
+<script src="jquery-3.2.1.min.js"></script>
+<script src="ResponsiveSlides/responsiveslides.min.js"></script>
+<script>
+	$(function() {
+		$("#slider").responsiveSlides({
+			auto : false,
+			pager : false,
+			nav : true,
+			speed : 500,
+			namespace : "slider-callback",
+			maxwidth : "550px"
+		});
+
+	});
+</script>
+
+
 </head>
 
 
 
 <body style="background-color:rgb(65, 84, 176)">
-    <header style="background-image: URL(images/live\ class.jpeg); text-align: right; height:300px; font-size: 40px;">
-    <div class="centered">LIVE VIRTUAL CLASS</div>
-    <div class="box"></div>
+    <header>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/s1.jpeg" style="height: 340px;" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color: white;">Live Virtual Class</h5>
+              <p>The LVC has got all the courses a developer would need</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/s2.jpeg" style="height: 340px;" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Live Virtual Class</h5>
+              <p>Learn with as per your convinience with out live or recorded classes</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/s3.png" style="height: 340px;" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Get a certification upon successfully completing the course.</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </header>
 
     <nav">
@@ -83,19 +138,44 @@ border: 1px solid black;
 			<li><a href="index.html">HOME</a></li>
 			<li><a href="courses.html" target="frm">ALL COURSES</a></li>
 			<li><a href="registeration.html" target="frm">REGISTERATION</a></li>
-            <li><a href="gallery.html" target="frm">PHOTO GALLERY</a></li>
+      <li><a href="gallery.html" target="frm">PHOTO GALLERY</a></li>
 			<li><a href="blog.html" target="frm">BLOG</a></li>
-            <li><a href="Graphics.html" target="frm">HELP</a></li>
-            <li><a href="contact_us.html" target="frm">CONTACT US</a></li>
-        </ul>
+      <li><a href="Graphics.html" target="frm">HELP</a></li>
+      <li><a href="contact_us.html" target="frm">CONTACT US</a></li>
+    </ul>
 	</nav>
  
-    <iframe name="frm" src="courses.html" height="500" width="1400"></iframe>    
+    <iframe name="frm" src="content.html" height="370" width="1400"></iframe>    
 
-    <footer>
-		<p></p>
-	</footer>
+<div class="container my-5">
 
+    <footer class="text-center text-lg-start" style="background-color: #db6930;">
+        <div class="container d-flex justify-content-center py-5">
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+            <i class="fab fa-youtube"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+            <i class="fab fa-instagram"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+            <i class="fab fa-twitter"></i>
+          </button>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-white" href="https://github.com//">Aniket Nikhade</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+    
+  </div>
+  <!-- End of .container -->
 
 </body>
 </html>

@@ -6,21 +6,21 @@
     <title>Registeration form</title>
 </head>
 <body>
-    <div class="container" style="float: center;">
+    <div class="container" style="border: solid 1px black; float: left; height: 350px; width: 400px; text-align: center; background: ; color: white;">
     <h1>Registeration For LVC</h1>
     <form action="Welcome.html">
-        NAME <input type="text" required  placeholder="Your name here">
-        <br>
+        NAME: <input type="text" required  placeholder="Your name here">
+        <br><br>
         Gender:   
         <input type="radio" id="gender" name="gender" value="male"/> Male 
-        <input type="radio" id="gender" name="gender" value="female"/> Female <br>
-        EMAIL: <input type="email" required placeholder="Your Email here"> <br>
+        <input type="radio" id="gender" name="gender" value="female"/> Female <br><br>
+        EMAIL: <input type="email" required placeholder="Your Email here"> <br><br>
         LOCATION: 
         <select>
             <option value="0">Select Location</option>
             <option value="1">Pune</option>
             <option value="2">Mumbai</option>
-        </select><br>
+        </select><br><br>
         SOFTWARE:
         <input type="checkbox" id="WORD" name="WORD" value="WORD">
 <label for="WORD"> WORD</label><br>
@@ -30,11 +30,20 @@
 <label for="POWERPOINT"> POWERPOINT</label><br>
         REMARKS:
         <input type="text"><br><br>
-        <div >
-        <input type="submit" value="submit" onsubmit="fun()">
+
+        <input type="submit" value="submit" onsubmit="fun()"><br>
         <!-- <script></script> -->
     </form>
-    </div>>
+    </div>
+
+
+
+    <div style="float: right; margin-right: 30%; margin-top: 5%;">
+        <img src="./images/n01.jpeg" style="height: 250px; width: 250px; padding:10px;">
+    </div>
+
+
+
 <script>
     function fun(){
         alert("submitted");
